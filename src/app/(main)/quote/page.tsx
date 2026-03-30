@@ -14,8 +14,8 @@ export default function QuotePage() {
   const [loading, setLoading] = useState(false);
   const fmt = (n: number) => `₦${n.toLocaleString('en-NG')}`;
 
-  const [contact, setContact] = useState({ name: '', email: '', phone: '', company: '', state: 'Lagos' });
-  const [delivery, setDelivery] = useState({ address: '', city: '', state: 'Lagos', notes: '' });
+  const [contact, setContact] = useState({ name: '', email: '', phone: '', company: '', state: 'Oyo' });
+  const [delivery, setDelivery] = useState({ address: '', city: '', state: 'Oyo', notes: '' });
 
   const submit = async () => {
     setLoading(true);

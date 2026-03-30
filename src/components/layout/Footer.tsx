@@ -35,7 +35,7 @@ export default function Footer() {
               Nigeria&apos;s trusted supplier of premium MDF, HDF, Blockboards, and Plywood.
             </p>
             <div style={{ marginTop: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.25rem', fontSize: '0.75rem', color: '#CAC6BE' }}>
-              <span>📍 Lagos, Nigeria</span>
+              <span>📍 Ibadan, Nigeria</span>
               <a href="tel:+2348000000000" style={{ color: '#CAC6BE', textDecoration: 'none' }}>📞 +234 800 000 0000</a>
               <a href="mailto:sales@starlightdeprince.com.ng" style={{ color: '#CAC6BE', textDecoration: 'none' }}>✉ sales@starlightdeprince.com.ng</a>
             </div>

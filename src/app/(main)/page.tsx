@@ -20,8 +20,8 @@ const categories = [
 ];
 
 const testimonials = [
-  { quote: 'Starlight delivered 500 sheets of Marine Plywood on time to our Lekki site. Top-tier quality.', name: 'Engr. Babatunde Adeyemi', role: 'Site Engineer', state: 'Lagos' },
-  { quote: "Their MDF boards have the best finishing in Lagos. We've made them our primary supplier.", name: 'Alhaji M. Usman', role: 'Procurement Director', state: 'Abuja' },
+  { quote: 'Starlight delivered 500 sheets of Marine Plywood on time to our Bodija site. Top-tier quality.', name: 'Engr. Babatunde Adeyemi', role: 'Site Engineer', state: 'Oyo' },
+  { quote: "Their MDF boards have the best finishing in Ibadan. We've made them our primary supplier.", name: 'Alhaji M. Usman', role: 'Procurement Director', state: 'Abuja' },
   { quote: 'The HDF boards are dense and solid. Cutting was smooth and the team was professional.', name: 'Mrs. Chioma Okafor', role: 'Property Developer', state: 'Enugu' },
 ];
 

@@ -9,8 +9,8 @@ import { logout } from '@/lib/auth';
 import QuoteDrawer from '@/components/ui/QuoteDrawer';
 
 const navLinks = [
+  { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
-  { href: '/catalog', label: 'Catalog' },
   { href: '/calculator', label: 'Calculator' },
   { href: '/quote', label: 'Get Quote' },
   { href: '/about', label: 'About' },

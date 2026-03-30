@@ -5,7 +5,7 @@ export default function FAQPage() {
     <div style={{ maxWidth: '40rem', margin: '6rem auto', padding: '1rem' }}>
       <h1 className="text-gradient-amber" style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '2rem' }}>Frequently Asked Questions</h1>
       <div className="card-dark" style={{ padding: '2rem' }}>
-        <h3 style={{ color: '#fff', fontSize: '1.125rem', marginBottom: '0.5rem' }}>Do you deliver outside Lagos?</h3>
+        <h3 style={{ color: '#fff', fontSize: '1.125rem', marginBottom: '0.5rem' }}>Do you deliver outside Ibadan?</h3>
         <p style={{ color: '#CAC6BE', marginBottom: '1.5rem', lineHeight: 1.6 }}>Yes, we deliver to all 36 states in Nigeria. Delivery costs are calculated during the quotation phase based on volume and distance.</p>
         
         <h3 style={{ color: '#fff', fontSize: '1.125rem', marginBottom: '0.5rem' }}>What is the minimum order quantity?</h3>

@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="card-dark" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
           <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📍</div>
           <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#fff', marginBottom: '0.5rem' }}>Head Office</h2>
-          <p style={{ color: '#CAC6BE', lineHeight: 1.6 }}>14 Industrial Avenue,<br />Lekki Phase 1, Lagos, Nigeria</p>
+          <p style={{ color: '#CAC6BE', lineHeight: 1.6 }}>Ring Road,<br />Ibadan, Nigeria</p>
         </div>
         
         <div className="card-dark" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
