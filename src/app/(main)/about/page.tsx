@@ -10,52 +10,56 @@ export default function AboutPage() {
   ];
 
   return (
-    <div style={{ maxWidth: '80rem', margin: '0 auto', padding: '5rem 1rem' }}>
-      <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <h1 className="text-gradient-amber" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, marginBottom: '1rem', lineHeight: 1.1 }}>About Starlight de Prince</h1>
-        <p style={{ fontSize: '1.25rem', color: '#CAC6BE', maxWidth: '40rem', margin: '0 auto' }}>Building Nigeria's future with uncompromising quality since 2012.</p>
+    <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20 lg:py-24">
+      {/* Header */}
+      <div className="text-center mb-12 md:mb-16">
+        <h1 className="text-gradient-amber text-4xl sm:text-5xl md:text-6xl font-black mb-4 leading-tight">About Starlight de Prince</h1>
+        <p className="text-lg md:text-xl text-warm-gray/90 max-w-2xl mx-auto">Building Nigeria's future with uncompromising quality since 2012.</p>
       </div>
       
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+      {/* Intro Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div>
-          <h2 style={{ fontSize: '2rem', fontWeight: 800, color: '#fff', marginBottom: '1.5rem' }}>The Gold Standard in Wood Boards</h2>
-          <p style={{ fontSize: '1rem', color: '#CAC6BE', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">The Gold Standard in Wood Boards</h2>
+          <p className="text-base md:text-lg text-warm-gray/90 leading-relaxed mb-6">
             Established in Ibadan, Starlight de Prince is Nigeria's premier supplier of industrial-grade wood boards, catering to interior designers, construction firms, and large-scale developers across all 36 states.
           </p>
-          <p style={{ fontSize: '1rem', color: '#CAC6BE', lineHeight: 1.8 }}>
+          <p className="text-base md:text-lg text-warm-gray/90 leading-relaxed">
             Our mission is to provide premium MDF, HDF, Blockboard, and Plywood with unmatched reliability and precise dimensions. We source only the finest commercial and marine-grade materials to ensure that your furniture and structural projects stand the test of time. We don't just supply materials; we engineer construction success.
           </p>
         </div>
-        <div style={{ position: 'relative', height: '450px', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }}>
+        <div className="relative h-64 sm:h-80 md:h-[450px] w-full rounded-2xl overflow-hidden shadow-ambient">
           <Image src="/images/about_office_wood.png" alt="Starlight Office Showroom" fill className="object-cover" />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(19,19,19,0.8), transparent)' }} />
+          <div className="absolute inset-0 bg-gradient-to-t from-steel-darkest/80 to-transparent" />
         </div>
       </div>
 
-      <div style={{ marginTop: '8rem' }}>
-        <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#D97706', marginBottom: '3rem', textAlign: 'center' }}>Our Core Values</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+      {/* Core Values */}
+      <div className="mt-20 md:mt-32">
+        <h2 className="text-3xl md:text-4xl font-black text-amber mb-10 text-center">Our Core Values</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {coreValues.map((v, i) => (
-            <div key={i} className="card-dark" style={{ padding: '2.5rem', borderTop: '4px solid #D97706', borderRadius: '1rem' }}>
-              <div style={{ fontSize: '2rem', color: '#FFB77D', marginBottom: '1rem', fontWeight: 900 }}>0{i + 1}</div>
-              <h3 style={{ fontSize: '1.25rem', color: '#fff', marginBottom: '1rem', fontWeight: 700 }}>{v.title}</h3>
-              <p style={{ color: '#CAC6BE', lineHeight: 1.6 }}>{v.desc}</p>
+            <div key={i} className="card-dark p-8 border-t-4 border-amber rounded-2xl">
+              <div className="text-4xl text-amber/60 font-black mb-4">0{i + 1}</div>
+              <h3 className="text-xl font-bold text-white mb-3">{v.title}</h3>
+              <p className="text-warm-gray/90 leading-relaxed">{v.desc}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div style={{ marginTop: '8rem', marginBottom: '4rem' }}>
-        <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#fff', marginBottom: '3rem', textAlign: 'center' }}>Facility & Quality Showcase</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-          <div style={{ position: 'relative', height: '350px', borderRadius: '1rem', overflow: 'hidden' }}>
-            <Image src="/images/gallery_warehouse_1774653938996.png" alt="Warehouse Overview" fill className="object-cover transition-transform duration-500 hover:scale-105" />
+      {/* Gallery */}
+      <div className="mt-20 md:mt-32 mb-10 md:mb-16">
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-10 text-center">Facility & Quality Showcase</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group">
+            <Image src="/images/gallery_warehouse_1774653938996.png" alt="Warehouse Overview" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div style={{ position: 'relative', height: '350px', borderRadius: '1rem', overflow: 'hidden' }}>
-            <Image src="/images/gallery_boards_1774653955330.png" alt="Material Close Up" fill className="object-cover transition-transform duration-500 hover:scale-105" />
+          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group">
+            <Image src="/images/gallery_boards_1774653955330.png" alt="Material Close Up" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div style={{ position: 'relative', height: '350px', borderRadius: '1rem', overflow: 'hidden' }}>
-            <Image src="/images/gallery_construction_1774653971295.png" alt="Project Execution" fill className="object-cover transition-transform duration-500 hover:scale-105" />
+          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group sm:col-span-2 lg:col-span-1">
+            <Image src="/images/gallery_construction_1774653971295.png" alt="Project Execution" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
         </div>
       </div>
