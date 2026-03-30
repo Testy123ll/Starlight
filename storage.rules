@@ -1,0 +1,25 @@
+rules_version = '2';
+
+// Craft rules based on data in your Firestore database
+// allow write: if firestore.get(
+//    /databases/(default)/documents/users/$(request.auth.uid)).data.isAdmin;
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Everything else is closed by default
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+
+    // Product Images:
+    // Anyone can view the product images
+    // Only admins can upload/modify images
+    match /products/{productId}/{fileName} {
+      allow read: if true;
+      // Allow if authenticated AND token has admin claim AND file size < 10MB
+      allow write: if request.auth != null 
+                   && request.auth.token.admin == true 
+                   && request.resource.size < 10 * 1024 * 1024;
+    }
+  }
+}
