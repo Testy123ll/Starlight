@@ -13,7 +13,7 @@ function StockBadge({ product }: { product: Product }) {
   return <span className="stock-pre">◎ Pre-Order</span>;
 }
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product, index = -1 }: { product: Product, index?: number }) {
   const addItem = useQuoteStore((s) => s.addItem);
   const fmt = (n: number) => `₦${n.toLocaleString('en-NG')}`;
 
@@ -29,7 +29,7 @@ export default function ProductCard({ product }: { product: Product }) {
     <div style={{ background: '#20201F', borderRadius: '0.5rem', border: '1px solid rgba(53,53,53,0.2)', overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.2s' }}>
       <div style={{ position: 'relative', height: '12rem', background: '#1C1B1B', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {product.imageUrls[0] ? (
-          <Image src={product.imageUrls[0]} alt={product.name} fill style={{ objectFit: 'cover', opacity: 0.8 }} />
+          <Image src={product.imageUrls[0]} alt={product.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" quality={60} priority={index !== -1 && index < 4} style={{ objectFit: 'cover', opacity: 0.8 }} />
         ) : (
           <span style={{ fontSize: '3rem', opacity: 0.3 }}>📦</span>
         )}

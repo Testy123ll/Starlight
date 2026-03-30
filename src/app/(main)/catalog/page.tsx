@@ -10,7 +10,7 @@ export default function CatalogDownloadPage() {
       
       <div className="card-dark" style={{ maxWidth: '56rem', margin: '0 auto', padding: '3rem', display: 'flex', flexWrap: 'wrap', gap: '3rem', alignItems: 'center', textAlign: 'left', borderRadius: '1rem' }}>
         <div style={{ position: 'relative', width: '280px', height: '380px', borderRadius: '0.5rem', overflow: 'hidden', flexShrink: 0, boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-          <Image src="/images/catalog_wood_boards.png" alt="2026 Catalog Cover" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/catalog_wood_boards.png" alt="2026 Catalog Cover" fill sizes="(max-width: 768px) 100vw, 280px" priority quality={60} style={{ objectFit: 'cover' }} />
         </div>
         <div style={{ flex: 1, minWidth: '300px' }}>
           <span style={{ fontSize: '0.75rem', color: '#D97706', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Digital Download</span>

@@ -109,7 +109,7 @@ export default function ProductsPage() {
               opacity: isFiltering ? 0.6 : 1,
               transition: 'opacity 0.2s ease-in-out'
             }}>
-              {products.map((p) => <ProductCard key={p.id} product={p} />)}
+              {products.map((p, index) => <ProductCard key={p.id} product={p} index={index} />)}
             </div>
           )}
         </div>
